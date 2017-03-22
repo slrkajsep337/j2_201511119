@@ -1,9 +1,7 @@
 package headfirst.strategy;
 
-public class MallardDuck extends Duck {
-  
-  //생성자(memory에 올리는 시점)
-  public MallardDuck() {
+public class ModelDuck extends Duck {
+  public ModelDuck() {
     flyBehavior = new FlyWithWings();
     //flyBehavior = new FlyNoWay();
     setFlyBehavior(new FlyWithWings());
@@ -14,8 +12,6 @@ public class MallardDuck extends Duck {
   }
 
   public void display() {
-    System.out.println("MallardDuck!");
+    System.out.println("Model duck!!");
   }
-
-  
 }
