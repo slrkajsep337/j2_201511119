@@ -11,6 +11,7 @@ public class Sorter {
                 if(comp.compare(data[j], data[indexOfMax]) > 0)
                     indexOfMax=j;
                 }
+            //if문 이해하기, 문자와 숫자의 sort 차이
                 Object temp=data[i];
                 data[i]=data[indexOfMax];
                 data[indexOfMax]=temp;

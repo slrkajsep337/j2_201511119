@@ -12,6 +12,8 @@ public class SorterMainV2 {
     Integer[] C = {new Integer(3), new Integer(1), new Integer(4), new Integer(2)};
     Comparator integerComp=new IntegerComparator();
     Sorter.sort(C, integerComp);
+    //run할 때는 전략적으로 type이 바뀜(고정부 변동부 분리)
+    //-> 전략패턴(strategy)
 
     for(int i=0; i<B.length; i++)
       System.out.println("B["+i+"]="+B[i]);
