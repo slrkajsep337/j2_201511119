@@ -4,13 +4,13 @@ package com.sd.address.V0;
 import java.util.*;
 
 public class AddressData implements Subject {
- private ArrayList observers;
+ public ArrayList<Observer> observers = new ArrayList<Observer>();
  private String name;
  private String number;
  private String mail;
  
  public AddressData() {
-  observers = new ArrayList();
+  observers = new ArrayList<Observer>();
  }
  
  public void registerObserver(Observer o) {
